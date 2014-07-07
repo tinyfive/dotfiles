@@ -1,0 +1,60 @@
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" Define bundles via Github repos
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails.git'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'scrooloose/syntastic'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'ervandew/supertab'
+Bundle 'godlygeek/tabular'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+Bundle 'bling/vim-airline'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+Bundle 'majutsushi/tagbar'
+" vim-scripts repos
+Bundle 'L9'
+" non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (ie. when working on your own plugin)
+" Bundle 'file:///Users/gmarik/path/to/plugin'
+
+" plugin from thoughtbot
+" Bundle 'christoomey/vim-run-interactive'
+" Bundle 'croaky/vim-colors-github'
+" Bundle 'danro/rename.vim'
+" Bundle 'pbrisbin/vim-mkdir'
+" Bundle 'scrooloose/syntastic'
+" Bundle 'slim-template/vim-slim'
+" Bundle 'thoughtbot/vim-rspec'
+" Bundle 'tpope/vim-bundler'
+" Bundle 'tpope/vim-endwise'
+" Bundle 'tpope/vim-rails'
+" Bundle 'tpope/vim-surround'
+" Bundle 'vim-scripts/matchit.zip'
+" Bundle 'vim-scripts/tComment'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+filetype on
